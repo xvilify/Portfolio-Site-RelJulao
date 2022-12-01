@@ -1,3 +1,10 @@
 /* Colors used:
 Primary: FAFBF2 (Bone White)
 Secondary: 000000 (Just Black)*/
+body {
+  font-family: 'Lacquer', sans-serif;
+}
+
+img {
+  width: 100%;
+}
