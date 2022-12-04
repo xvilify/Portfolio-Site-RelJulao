@@ -68,19 +68,17 @@ a:visited {
   color: #68B3F9;
 }
 
-
 a:active {
   /* selected link */
   color: #5CB3E3;
 }
 
-  /* hover */
+/* hover */
 a:hover,
 a:focus {
   color: #24D681;
   text-decoration: underline;
   text-decoration: bold;
-
 }
 
 /* Button (Neutral) */
