@@ -56,8 +56,9 @@ a {
 }
 
 a:hover {
-  color: #5CB3E3;
+  color: #FFFFFF;
   text-decoration: underline;
+  text-decoration: bold
   /* Underlining when hovering over a link */
 }
 
@@ -80,12 +81,11 @@ a:focus {
 /* Read More Button */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #FFFFFF;
-  color: #10534F; /* needed to override the default link color */
+  background-color: #CF2A2A;
+  color: #FFFFFF; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #000000; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
- 
