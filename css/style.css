@@ -77,11 +77,11 @@ a:focus {
   text-decoration: underline;
 }
 
-<a href="projectheadthread.html" class="button">Read more</a>
+/* Read More Button */
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #ffffff; /* needed to override the default link color */
+  background-color: #CF2A2A;
+  color: #10534F; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -89,6 +89,6 @@ a:focus {
   transition: 0.2s opacity;
 }
 
-<a href="#" class="button">Email</a>
+
 
 <a href="#" class="button">View CV</a>
