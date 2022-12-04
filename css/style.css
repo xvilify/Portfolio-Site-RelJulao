@@ -50,21 +50,21 @@ img {
 
 /* HYPERLINK STYLING */
 a {
-  color: #ff7f50;
+  color: #CF2A2A;
   text-decoration: none;
   /* No underlining */
 }
 
 a:hover {
-  color: #FFFFFF;
+  color: #CF2A2A;
   text-decoration: underline;
-  text-decoration: bold
+  text-decoration: bold;
   /* Underlining when hovering over a link */
 }
 
 a:visited {
   /* visited link */
-  color: #F40F00;
+  color: #68B3F9;
 }
 
 a:active {
@@ -74,8 +74,9 @@ a:active {
 
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #24D681;
   text-decoration: underline;
+  text-decoration: bold;
 }
 
 /* Read More Button */
@@ -88,4 +89,8 @@ a:focus {
   border-radius: 3px;
   border-bottom: 2px solid #000000; /* width of the border, type, color */
   transition: 0.2s opacity;
+}
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
 }
