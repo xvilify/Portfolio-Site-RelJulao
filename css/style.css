@@ -77,7 +77,7 @@ a:focus {
   text-decoration: underline;
 }
 
-<a href="#" class="button">Read more</a>
+<a href="projectheadthread.html" class="button">Read more</a>
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
