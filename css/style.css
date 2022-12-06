@@ -3,50 +3,68 @@ Primary: FAFBF2 (Bone White)
 Secondary: 000000 (Just Black)*/
 /* BODY */
 body {
-    font-family: 'Lacquer', cursive;
-    font-size: 16px;
-    /* Sets the font size to 16px */
-    font-weight: 300;
-    /* Sets the font weight to 300 */
-    line-height: 1.6;
-    /* Sets the line-height to 1.6 * the font-size */
-    color: #4a4a4a;
-  }
-
-/* background color for header */
-  header {
-  background-color: #000000;
-  padding: 10px;
-  margin: 10px;
-  border-bottom: 3px solid #5CB3E3;
+  font-family: 'Lacquer', cursive;
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
 }
 
+/* background color for header */
+header {
+  background-color: #000000;
+  padding: 10 px;
+  /* inner spacing spacing */
+  margin: 0 auto;
+  /* outer spacing */
+  border-bottom: 3px solid #4a4a4a;
+}
 
+  {
+  box-sizing: border-box;
+}
 
-  /* FONT VARIATIONS */
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
+selector {
+  position: relative;
+  float: right;
+  width: 1200px;
+  width: 80%;
+}
 
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
-  }
+/* LAYOUT STYLING */
+/* containers */
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+}
 
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-  }
+/* FONT VARIATIONS */
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
 
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-  }
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
 
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
 
 /* IMAGE WIDTH */
 img {
