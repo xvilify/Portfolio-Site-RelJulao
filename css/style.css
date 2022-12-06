@@ -21,12 +21,52 @@ header {
   margin: 0 auto;
   /* outer spacing */
   border-bottom: 3px solid #4a4a4a;
+  text-align: center;
+  padding: 10px 0;
 }
 
+/* Navigation Bar */
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #4a4a4a;
+}
+
+main {
+  padding-top: 133px;
+}
+
+
+/* Hero Section */
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+#hero {
+  background-color: #FAFBF2;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+/* box sizing */
   {
   box-sizing: border-box;
 }
 
+/* Selector */
 selector {
   position: relative;
   float: right;
@@ -39,6 +79,28 @@ selector {
 .container {
   max-width: 1200px;
   padding: 0 15px;
+}
+
+/* ROWS */
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+
+/* Text Alignment */
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+/* Logo Alignment */
+.logo {
+  max-width: 75px;
 }
 
 /* FONT VARIATIONS */
