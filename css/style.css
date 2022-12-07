@@ -25,7 +25,7 @@ header {
   margin: 0 auto;
   /* outer spacing */
   border-bottom: 3px solid #4a4a4a;
-  text-align: center;
+  text-align: unset;
   padding: 10px 0;
 }
 
@@ -46,13 +46,12 @@ nav>ul>li>a {
   color: #4a4a4a;
 }
 
+/* Main */
 main {
   padding-top: 133px;
 }
 
-
 /* Hero Section */
-
 #hero h1 {
   margin: 0;
   padding: 0.67em 0;
@@ -210,21 +209,24 @@ a:focus {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) {}
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
-}
+@media only screen and (min-width: 1440px) {}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {
-}
+@media only screen and (min-width: 1920px) {}
