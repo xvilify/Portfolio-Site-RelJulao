@@ -1,7 +1,5 @@
-/* Colors used:
-Primary: FAFBF2 (Bone White)
-Secondary: 000000 (Just Black)*/
-/* BODY */
+/* CSS FILE */
+
 body {
   font-family: 'Lacquer', cursive;
   font-size: 18px;
@@ -10,12 +8,14 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #FFFFFF;
 }
 
 * {
   box-sizing: border-box;
 }
+
+/* background image */
 
 /* background color for header */
 header {
