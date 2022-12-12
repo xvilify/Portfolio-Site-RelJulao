@@ -298,7 +298,7 @@ Medium devices (640px and larger)
   [class*="col-"] {
     float: left;
   }
-
+}
   /* ==============================
 Large devices (1024px or larger)
 ================================= */
