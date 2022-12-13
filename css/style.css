@@ -40,7 +40,7 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 20px;
   text-transform: none;
   font-weight: 400;
   color: #4a4a4a;
@@ -58,16 +58,18 @@ main {
   text-align: center;
 }
 
+#hero span {
+  display: block;
+}
+
 #hero {
   background-color: #CF2A2A;
   color: white;
-  padding: 20px 0;
+  padding: 15px 0;
   display: inline-block;
   width: 100%;
 
-  #hero span {
-    display: block;
-  }
+
 
   /* svg animations */
   .svg {
@@ -281,7 +283,7 @@ Medium devices (640px and larger)
     text-align: unset;
     padding: 20px 0 13px;
   }
-
+}
   nav {
     width: auto;
     float: right;
@@ -305,7 +307,7 @@ Large devices (1024px or larger)
       float: right;
       margin-top: 4px;
     }
-
+}
     .col-lg-7 {
       width: 50%;
     }
