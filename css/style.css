@@ -11,11 +11,6 @@ body {
   box-sizing: border-box;
 }
 
-/* logo */
-.logo {
-  max-width: 250px;
-}
-
 img {
   width: 100%;
 }
@@ -74,6 +69,10 @@ main {
   width: 100%;
 }
 
+/* logo */
+.logo {
+  max-width: 250px;
+}
 
   /* svg animations */
   .svg {
