@@ -13,12 +13,11 @@ body {
 
 /* logo */
 .logo {
-  max-width: 75px;
+  max-width: 250px;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
 }
 
 /* background color for header */
@@ -30,7 +29,7 @@ header {
   margin: 0 auto;
   /* outer spacing */
   border-bottom: 3px solid #4a4a4a;
-  text-align: unset;
+  text-align: center;
   padding: 10px 0;
 }
 
@@ -45,9 +44,9 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 20px;
+  padding: 0 15px;
   text-transform: none;
-  font-weight: 400;
+  font-weight: 700;
   color: #4a4a4a;
 }
 
