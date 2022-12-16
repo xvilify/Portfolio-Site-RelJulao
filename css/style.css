@@ -74,206 +74,206 @@ main {
   max-width: 250px;
 }
 
-  /* svg animations */
-  .svg {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+/* svg animations */
+.svg {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
   }
 
-  @keyframes color-change {
-    from {
-      fill: #edc655;
-    }
+  to {
+    fill: #f76414;
+  }
+}
 
-    to {
-      fill: #f76414;
-    }
+@keyframes color-change {
+  0% {
+    fill: #edc655;
   }
 
-  @keyframes color-change {
-    0% {
-      fill: #edc655;
-    }
-
-    50% {
-      fill: #fcffad;
-    }
-
-    100% {
-      fill: #f76414;
-    }
+  50% {
+    fill: #fcffad;
   }
 
-  .sun {
-    animation-duration: 4s;
-    animation-name: color-change;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
 
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
 
-    to {
-      transform: translate(200px, 50px);
-    }
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
   }
 
-  .cloud-front {
-    animation-duration: 30s;
-    animation-name: cloud-move;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
+  to {
+    transform: translate(100px, 48px);
   }
+}
 
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-
-  .cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-  }
-
-  /* box sizing */
+/* box sizing */
 * {
-    box-sizing: border-box;
-  }
+  box-sizing: border-box;
+}
 
-  /* LAYOUT STYLING */
-  /* containers */
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 15px;
-  }
+/* LAYOUT STYLING */
+/* containers */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
 
-  /* rows */
-  .row {
-    margin: 25px 0;
-    /* 25px top and bottom, 0 left and right */
-  }
+/* rows */
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
-  #work .row {
-    padding-bottom: 25px;
-    border-bottom: 1px solid #4a4a4a;
-  }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
-  /* Logo Alignment */
-  .logo {
-    max-width: 75px;
-  }
+/* Logo Alignment */
+.logo {
+  max-width: 75px;
+}
 
-  /* FONT VARIATIONS */
-  h1, h2, h3, h4 {
-    line-height: 1.4;
-  }
+/* FONT VARIATIONS */
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
 
-  h1 {
-    font-size: 2.75em;
-    font-weight: 700;
-  }
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
 
-  h2 {
-    font-size: 2.25em;
-    font-weight: 700;
-  }
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
 
-  h3 {
-    font-size: 1.75em;
-    font-weight: 400;
-  }
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
 
-  h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-  }
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
 
-  /* HYPERLINK STYLING */
-  a {
-    color: #CF2A2A;
-    text-decoration: none;
-    /* No underlining */
-  }
+/* HYPERLINK STYLING */
+a {
+  color: #CF2A2A;
+  text-decoration: none;
+  /* No underlining */
+}
 
-  /* General Links (Hover) */
-  a:hover {
-    color: #CF2A2A;
-    text-decoration: underline;
-    /* Underlining when hovering over a link */
-  }
+/* General Links (Hover) */
+a:hover {
+  color: #CF2A2A;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
 
-  a:visited {
-    /* visited link */
-    color: #68B3F9;
-  }
+a:visited {
+  /* visited link */
+  color: #68B3F9;
+}
 
-  a:active {
-    /* selected link */
-    color: #5CB3E3;
-  }
+a:active {
+  /* selected link */
+  color: #5CB3E3;
+}
 
-  /* Button (Neutral) */
-  .button {
-    display: inline-block;
-    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #CF2A2A;
-    color: #FFFFFF;
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 3px;
-    border-bottom: 2px solid #000000;
-    transition: 0.2s opacity;
-    display: inline-block;
-    transition-duration: 0.2s;
-    transition-property: opacity;
-  }
+/* Button (Neutral) */
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #CF2A2A;
+  color: #FFFFFF;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #000000;
+  transition: 0.2s opacity;
+  display: inline-block;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
 
-  /* button */
-  .button:hover {
-    opacity: 0.8;
-    text-decoration: none;
-  }
+/* button */
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
 
-  /* Button (contact) */
-  .button.contact {
-    background-color: transparent;
-    color: #ff7f50;
-    text-transform: uppercase;
-    border: 2px solid #ff7f50;
-  }
+/* Button (contact) */
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
 
-  /* Button (Hover) */
-  .button.contact:hover {
-    background-color: #ff7f50;
-    color: #ffffff;
-  }
+/* Button (Hover) */
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
 
-  /* hover */
-  a:hover,
-  a:focus {
-    color: #24D681;
-    text-decoration: underline;
-  }
+/* hover */
+a:hover,
+a:focus {
+  color: #24D681;
+  text-decoration: underline;
+}
 
-  /* ==============================
+/* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
@@ -282,45 +282,47 @@ Medium devices (640px and larger)
     padding: 20px 0 13px;
   }
 }
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  [class*="col-"] {
-    float: left;
-  }
-
-  /* ==============================
-Large devices (1024px or larger)
-================================= */
-  @media only screen and (min-width: 1024px) {
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
 }
-    .col-lg-7 {
-      width: 50%;
-    }
 
-    .col-lg-5 {
-      width: 50%;
-    }
+.col-lg-7 {
+  width: 50%;
+}
 
-    /* ==============================
+.col-lg-5 {
+  width: 50%;
+}
+
+/* ==============================
 X-large devices (1440px or larger)
 ================================= */
-    @media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {}
 
-    /* ==============================
+/* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-
-    @media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1920px) {}
