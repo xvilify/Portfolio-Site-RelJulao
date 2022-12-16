@@ -306,7 +306,7 @@ Large devices (1024px or larger)
     width: auto;
     float: right;
     margin-top: 4px;
-  }
+    }
 }
 
 .col-lg-7 {
@@ -320,9 +320,13 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+
+}
 
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
-@media only screen and (min-width: 1920px) {}
+@media only screen and (min-width: 1920px) {
+
+}
