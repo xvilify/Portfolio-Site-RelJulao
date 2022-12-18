@@ -71,7 +71,7 @@ main {
 
 /* logo */
 .logo {
-  max-width: 250px;
+  max-width: 150px;
 }
 
 /* svg animations */
@@ -151,6 +151,8 @@ main {
 }
 
 /* LAYOUT STYLING */
+
+
 /* containers */
 .container {
   max-width: 1200px;
