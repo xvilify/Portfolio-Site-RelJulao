@@ -46,10 +46,6 @@ nav>ul>li>a {
   display: none;
 }
 
-.navtoggle.responsive li {
-  display: block;
-}
-
 .navtoggle, .navtoggle.responsive {
   position: relative;
 }
