@@ -18,13 +18,12 @@ img {
 /* background color for header */
 header {
   background-color: #000000;
-  padding: 10px;
+  padding: 10px 0 4px;
   position: relative;
   /* inner spacing spacing */
   margin: 0 auto;
   /* outer spacing */
   border-bottom: 3px solid #4a4a4a;
-  text-align: center;
   padding: 10px 0;
 }
 
@@ -43,8 +42,24 @@ nav>ul>li>a {
 }
 
 /* Nav Toggle */
-.navtoggle.responsive li  {
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li {
   display: block;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
 }
 
 .navtoggle.responsive nav {
@@ -62,7 +77,7 @@ nav>ul>li>a {
 
 /* Main */
 main {
-  padding-top: 133px;
+  padding-top: 56px;
 }
 
 /* Hero Section */
@@ -304,40 +319,15 @@ a:focus {
   }
 
   .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
-
-  .navtoggle li:not(:last-child) {
     display: none;
   }
 
-  .navtoggle, .navtoggle.responsive {
-    position: relative;
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
 
   .navtoggle.responsive nav {
     padding: 24px 0 0;
-  }
-
-  .navtoggle li .icon {
-    position: absolute;
-    right: 0;
-    top: 2px;
-    font-size: 20px;
-  }
-
-  .navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid rgba(255, 127, 80, 0.5);
-  }
-
-  .navtoggle.responsive li:last-child {
-    padding: 0 0 10px;
-  }
-
-  .navtoggle li:last-child {
-    display: none;
   }
 
   nav {
