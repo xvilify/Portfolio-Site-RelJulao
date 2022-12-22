@@ -32,6 +32,7 @@ header {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -42,11 +43,13 @@ nav>ul>li>a {
 }
 
 /* Nav Toggle */
+.navtoggle.responsive li  {
+  display: block;
+}
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
@@ -55,10 +58,6 @@ nav>ul>li>a {
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
-}
-
-.navtoggle li:not(:last-child) {
-  display: none;
 }
 
 /* Main */
@@ -167,8 +166,6 @@ main {
 }
 
 /* LAYOUT STYLING */
-
-
 /* containers */
 .container {
   max-width: 1200px;
@@ -292,70 +289,92 @@ a:focus {
 }
 
 /* Medium devices (640px and larger) */
-
 @media only screen and (min-width: 640px) {
   header {
     text-align: unset;
     padding: 20px 0 13px;
   }
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
+  nav>ul>li {
+    margin: 1em 0;
   }
 
   nav>ul>li {
     display: inline-block;
   }
-  
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle, .navtoggle.responsive {
+    position: relative;
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(255, 127, 80, 0.5);
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
+  }
+
   .navtoggle li:last-child {
-  display: none;
-}
-
-nav {
-  width: auto;
-  float: right;
-  margin-top: 4px;
-}
-
-.col-md-6 {
-  width: 50%;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-}
-
-/* Large devices (1024px or larger) */
-
-@media only screen and (min-width: 1024px) {
+    display: none;
+  }
 
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
-    }
+  }
 
-.col-lg-7 {
-  width: 50%;
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
 }
 
-.col-lg-5 {
-  width: 50%;
-}
+/* Large devices (1024px or larger) */
+@media only screen and (min-width: 1024px) {
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
+  .col-lg-7 {
+    width: 50%;
+  }
+
+  .col-lg-5 {
+    width: 50%;
+  }
 }
 
 /* X-large devices (1440px or larger) */
-
-@media only screen and (min-width: 1440px) {
-
-}
+@media only screen and (min-width: 1440px) {}
 
 /* Extra-large devices (1920px or larger) */
-
-@media only screen and (min-width: 1920px) {
-
-}
+@media only screen and (min-width: 1920px) {}
