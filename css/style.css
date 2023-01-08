@@ -311,7 +311,7 @@ a:focus {
     margin: 1em 0;
   }
 
-  .navtoggle li:not(:last-child) {
+  .navtoggle li:last-child {
     display: none;
   }
 
